@@ -151,7 +151,7 @@ public class ChessMatch {
 		for (Piece p : opponentPieces) {
 			boolean[][] mat = p.possibleMoves();
 			if(mat[kingPosition.getRow()][kingPosition.getColumn()]) {
-				
+				return true;
 			}
 		}
 		return false;
